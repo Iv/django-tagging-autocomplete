@@ -4,7 +4,7 @@ function split( val ) {
 function extractLast( term ) {
     return split( term ).pop();
 }
-function installTaggingAutocompleate(id, api_url){
+function installTaggingAutocomplete(id, api_url){
 	$("#" + id).autocomplete({
 		source: function(request, response){
 			$.getJSON(api_url, {

@@ -11,7 +11,7 @@ class TagAutocomplete(TextInput):
 		if not 'class' in attrs:
 			attrs.update({'class' : 'vTextField'})
 		html = super(TagAutocomplete, self).render(name, value, attrs)
-		js = u'<script type="text/javascript">$(function() {installTaggingAutocompleate("%s", "%s") });</script>' % (attrs['id'], list_view)
+		js = u'<script type="text/javascript">$(function() {installTaggingAutocomplete("%s", "%s") });</script>' % (attrs['id'], list_view)
 		return mark_safe("\n".join([html, js]))
 
 	class Media:
