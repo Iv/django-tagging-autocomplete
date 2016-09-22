@@ -5,7 +5,7 @@ long_description = open('README.txt').read()
  
 setup(
     name='django-tagging-autocomplete',
-    version='0.3.1',
+    version='0.5.1',
     description='Autocompletion for django-tagging',
     long_description=long_description,
     author='Ludwik Trammer',
@@ -22,6 +22,9 @@ setup(
         'Framework :: Django',
     ],
     zip_safe=False,
+    install_requires=[
+        'simplejson'
+    ]
     #package_data={},
     #test_suite='tagging_autocomplete.tests.runtests.runtests'
 ) 
